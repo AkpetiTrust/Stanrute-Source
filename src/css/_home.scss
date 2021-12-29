@@ -1,0 +1,64 @@
+// Hero Section
+
+body {
+  background-color: #f8fffc;
+}
+
+.hero {
+  height: 100vh;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30px;
+  background-image: url("./css/hero_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 60%;
+  color: #fff;
+
+  .inner {
+    width: 500px;
+    padding-left: $padding-left;
+  }
+
+  h1 {
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 1em;
+  }
+
+  p {
+    font-size: 1.2em;
+    margin: 15px 0;
+  }
+
+  .btn {
+    background-color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+  }
+}
+
+// Main section
+.main {
+  padding-top: 100px;
+  padding-left: $padding-left + 30px;
+  padding-right: $padding-left + 30px;
+  h1 {
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 1em;
+    width: 500px;
+    color: #2f2e41;
+  }
+
+  .services {
+    margin-top: 50px;
+    width: 100%;
+    grid-template-rows: 1fr;
+
+    .btn-soon {
+      color: $primary-color;
+      background-color: #e5fff4;
+    }
+  }
+}

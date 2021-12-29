@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+  overflow-x: hidden;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.btn {
+  padding: 7px 15px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  background-color: unset;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+}
+
+.text-primary {
+  color: #009153;
+}
+
+.text-secondary {
+  color: #0067df;
+}
+
+.btn-primary {
+  background-color: #009153;
+  color: #fff;
+  font-weight: 600;
+}
+
+.btn-secondary {
+  background-color: #0067df;
+  color: #fff;
+  font-weight: 600;
+}
+
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body {
+  background-color: #f8fffc;
+}
+
+.hero {
+  height: 100vh;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px;
+  background-image: url("./css/hero_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 60%;
+  color: #fff;
+}
+
+.hero .inner {
+  width: 500px;
+  padding-left: 60px;
+}
+
+.hero h1 {
+  font-size: 3em;
+  font-weight: 700;
+  line-height: 1em;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin: 15px 0;
+}
+
+.hero .btn {
+  background-color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.main {
+  padding-top: 100px;
+  padding-left: 90px;
+  padding-right: 90px;
+}
+
+.main h1 {
+  font-size: 3em;
+  font-weight: 700;
+  line-height: 1em;
+  width: 500px;
+  color: #2f2e41;
+}
+
+.main .services {
+  margin-top: 50px;
+  width: 100%;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+.main .services .btn-soon {
+  color: #009153;
+  background-color: #e5fff4;
+}
+/*# sourceMappingURL=index.css.map */

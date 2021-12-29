@@ -1,0 +1,68 @@
+.service {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(0, 1fr) minmax(0, 1fr);
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  background-color: #fff;
+  margin-bottom: 100px;
+  -webkit-box-shadow: 2px 2px 20px rgba(140, 140, 140, 0.2);
+          box-shadow: 2px 2px 20px rgba(140, 140, 140, 0.2);
+  border-radius: 10px;
+}
+
+:global(.image-container) {
+  background-color: currentColor;
+  overflow: hidden;
+}
+
+:global(.image-container) img {
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+:global(.talk) {
+  padding: 40px;
+}
+
+:global(.talk) h3 {
+  font-size: 2em;
+}
+
+:global(.talk) p {
+  color: #000;
+  font-size: 1.3em;
+  line-height: 1.3em;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+:global(.talk) a {
+  margin-top: 10px;
+}
+
+.reverse :global(.image-container) {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.reverse :global(.talk) {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+@media screen and (max-width: 800px) {
+  .service {
+    display: block;
+  }
+  :global(.talk) {
+    padding: 30px;
+    padding-bottom: 50px;
+  }
+}
+/*# sourceMappingURL=service.module.css.map */
