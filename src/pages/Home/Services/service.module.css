@@ -20,6 +20,7 @@
   height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 10px;
 }
 
 :global(.talk) {
@@ -61,8 +62,11 @@
     display: block;
   }
   :global(.talk) {
-    padding: 30px;
-    padding-bottom: 50px;
+    padding: 20px;
+  }
+  :global(.image-container) img {
+    height: unset;
+    max-width: 100%;
   }
 }
 /*# sourceMappingURL=service.module.css.map */
