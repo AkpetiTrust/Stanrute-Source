@@ -12,7 +12,9 @@ export default function Hero() {
         </Link>
       </Navbar>
       <section className="inner">
-        <h1>Making everyone financially free </h1>
+        <h1>
+          Making everyone financially <span className="colored">free</span>{" "}
+        </h1>
         <p>
           A platform that gives everyone an easy entry into the financial
           ecosystem of the future.

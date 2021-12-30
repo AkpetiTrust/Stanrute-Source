@@ -125,6 +125,10 @@ body {
   line-height: 1em;
 }
 
+.hero h1 .colored {
+  color: #fff7bb;
+}
+
 .hero p {
   font-size: 1.2em;
   margin: 15px 0;
