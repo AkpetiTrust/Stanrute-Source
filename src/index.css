@@ -8,6 +8,20 @@
           box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 15px;
+}
+
 body {
   font-family: "Cairo", sans-serif;
   overflow-x: hidden;
@@ -88,6 +102,18 @@ body {
   color: #fff;
 }
 
+.hero .logo {
+  width: 130px;
+  position: absolute;
+  left: 90px;
+  top: 4px;
+  z-index: 3;
+}
+
+.hero .logo img {
+  max-width: 100%;
+}
+
 .hero .inner {
   width: 500px;
   padding-left: 60px;
@@ -155,6 +181,11 @@ body {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("./css/hero_bg.jpg");
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./css/hero_bg.jpg");
   }
+  .hero .logo {
+    left: 30px;
+    top: 0;
+    width: 100px;
+  }
   .hero .inner {
     padding-left: 0;
     width: 100%;
@@ -165,6 +196,12 @@ body {
   }
   .main h1 {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .hero .logo {
+    left: 50px;
   }
 }
 /*# sourceMappingURL=index.css.map */

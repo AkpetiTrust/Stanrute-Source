@@ -1,8 +1,16 @@
 import React from "react";
+import Navbar from "../../components/Navbar/Navbar";
+import Logo from "./images/logo.png";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
     <section className="hero flex">
+      <Navbar textColor={"#fff"}>
+        <Link to="/" className="logo">
+          <img src={Logo} alt="Logo" />
+        </Link>
+      </Navbar>
       <section className="inner">
         <h1>Making everyone financially free </h1>
         <p>
