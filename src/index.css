@@ -48,6 +48,7 @@ body {
   text-decoration: none;
   color: #000;
   display: inline-block;
+  font-family: inherit;
 }
 
 .text-primary {
@@ -261,6 +262,8 @@ body {
   width: 10px;
   background-image: url(./css/dashes.png);
   background-repeat: repeat-y;
+  -webkit-animation: scroll 12s linear 0s infinite forwards;
+          animation: scroll 12s linear 0s infinite forwards;
 }
 
 .features .inner .feature .feature-title {
@@ -365,6 +368,95 @@ body {
   background-color: #000;
 }
 
+.groove {
+  width: 100%;
+  min-height: 400px;
+  padding: 50px;
+  background-color: #ffc01e;
+  border-radius: 15px;
+  margin-top: 100px;
+  position: relative;
+}
+
+.groove h1 {
+  max-width: 500px;
+  margin-bottom: 5px;
+}
+
+.groove p {
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: #fff;
+}
+
+.groove form {
+  max-width: 600px;
+  position: relative;
+  background-color: #fff;
+  height: 50px;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 1.5rem;
+}
+
+.groove form input {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 20px;
+  height: 100%;
+  width: 70%;
+  display: inline-block;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 1.2rem;
+}
+
+.groove form input::-webkit-input-placeholder {
+  color: #9b9b9b;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.groove form input:-ms-input-placeholder {
+  color: #9b9b9b;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.groove form input::-ms-input-placeholder {
+  color: #9b9b9b;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.groove form input::placeholder {
+  color: #9b9b9b;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.groove form .btn {
+  position: absolute;
+  z-index: 3;
+  right: 10px;
+  top: 7px;
+  background-color: #0067df;
+  color: #fff;
+  padding: 5px 15px;
+  height: 36px;
+}
+
+.groove img {
+  position: absolute;
+  right: 100px;
+  bottom: 0;
+  height: 350px;
+}
+
 @media screen and (max-width: 1200px) {
   .features .inner {
     -ms-grid-rows: 1fr 1fr 1fr 500px;
@@ -396,6 +488,19 @@ body {
   }
   .features .inner figure figcaption {
     text-align: left;
+  }
+  .groove img {
+    right: 20px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .groove {
+    min-height: 100%;
+  }
+  .groove img {
+    display: none;
   }
 }
 
@@ -445,6 +550,57 @@ body {
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2 / 3;
+  }
+  .groove {
+    padding: 25px;
+  }
+  .groove form {
+    padding: 0;
+    background-color: unset;
+    border-radius: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: unset;
+  }
+  .groove form input {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    height: 50px;
+    margin-bottom: 20px;
+  }
+  .groove form .btn {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .groove form input,
+  .groove form .btn {
+    position: static;
+  }
+}
+
+@-webkit-keyframes scroll {
+  from {
+    background-position-y: 0;
+  }
+  to {
+    background-position-y: -90%;
+  }
+}
+
+@keyframes scroll {
+  from {
+    background-position-y: 0;
+  }
+  to {
+    background-position-y: -90%;
   }
 }
 /*# sourceMappingURL=index.css.map */

@@ -2,6 +2,7 @@ import React from "react";
 import Service from "./Services/Service";
 import Features from "./Features";
 import Testimony from "./Testimony";
+import Groove from "./Groove";
 import Etrading from "./images/e-trading.png";
 import GiftCard from "./images/gift_card.png";
 import Education from "./images/education.png";
@@ -85,6 +86,7 @@ export default function Main() {
       </section>
       <Features />
       <Testimony />
+      <Groove />
     </section>
   );
 }
