@@ -1,5 +1,6 @@
 import React from "react";
 import Service from "./Services/Service";
+import Features from "./Features";
 import Etrading from "./images/e-trading.png";
 import GiftCard from "./images/gift_card.png";
 import Education from "./images/education.png";
@@ -81,6 +82,7 @@ export default function Main() {
           </section>
         </Service>
       </section>
+      <Features />
     </section>
   );
 }
