@@ -1,9 +1,13 @@
 import React from "react";
 import CEO from "./images/CEO.png";
+import LogoWatermark from "./images/logo-watermark.png";
 
 export default function Features() {
   return (
     <section className="features">
+      <div className="watermark" aria-hidden>
+        <img src={LogoWatermark} alt="watermark" />
+      </div>
       <h1 className="features-title">
         It only gets <span className="text-secondary">better!</span>
       </h1>
@@ -14,6 +18,7 @@ export default function Features() {
 
       <section className="inner grid">
         <div className="feature">
+          <div className="dashes" aria-hidden></div>
           <h3 className="feature-title">Standard</h3>
           <p className="feature-talk">
             At Stanrute, our services come to you on a gold platter. We offer
@@ -22,6 +27,7 @@ export default function Features() {
           </p>
         </div>
         <div className="feature">
+          <div className="dashes" aria-hidden></div>
           <h3 className="feature-title">Reliable</h3>
           <p className="feature-talk">
             You can always count on us in terms of consistency. Well grounded in
