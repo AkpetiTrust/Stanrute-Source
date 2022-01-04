@@ -8,7 +8,7 @@ export default function Navbar({ children, textColor }) {
 
   return (
     <section
-      className={`${style.navbar} ${active ? style.active : ""}`}
+      className={`${style.navbar} ${active ? style.active : ""} nav`}
       style={{ color: textColor }}
     >
       {children}

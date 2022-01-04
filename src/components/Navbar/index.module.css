@@ -107,7 +107,7 @@
     cursor: pointer;
     -webkit-transition: 0.5s;
     transition: 0.5s;
-    color: #fff;
+    color: inherit;
   }
   .navbar .toggle::before {
     content: "";
