@@ -4,14 +4,18 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
-import Academy from "./pages/Academy/Academy"
+import Academy from "./pages/Academy/Academy";
+import Career from "./pages/Career/Career";
+import ScrollToTop from "./ScrollToTop";
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path='/' exact element={<Home />} />
         <Route path='/academy' exact element={<Academy />} />
+        <Route path='/careers' exact element={<Career />} />
       </Routes>
     </Router>
   </React.StrictMode>,
