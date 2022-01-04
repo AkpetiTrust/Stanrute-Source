@@ -67,6 +67,24 @@ $blue-color: #0067df;
       font-size: 1.2em;
       line-height: 1.2em;
     }
+
+    .card_section {
+      padding-top: 60px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 10px;
+    }
+  }
+}
+
+@media screen and(max-width:1100px) {
+  .academy {
+    .main {
+      .card_section {
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 20px;
+      }
+    }
   }
 }
 
@@ -76,6 +94,14 @@ $blue-color: #0067df;
       left: 15px;
       top: 0;
       width: 170px;
+    }
+
+    .main {
+      .card_section {
+        grid-template-columns: 1fr;
+        grid-row-gap: 20px;
+        justify-items: center;
+      }
     }
   }
 }

@@ -2,7 +2,9 @@ import React from "react";
 import style from "./academy.module.css";
 import logo from "./Stanrute.png";
 import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
 import { Link } from "react-router-dom";
+import AcademyCard from "./AcademyCard/AcademyCard";
 
 export default function Academy() {
   return (
@@ -30,7 +32,19 @@ export default function Academy() {
         <p className={style.subtitle}>
           We have free and paid resources that are curated by industry experts
         </p>
+        <div className={style.card_section}>
+          <div>
+            <AcademyCard />
+          </div>
+          <div>
+            <AcademyCard />
+          </div>
+          <div>
+            <AcademyCard />
+          </div>
+        </div>
       </main>
+      <Footer />
     </section>
   );
 }
