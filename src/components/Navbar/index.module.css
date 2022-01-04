@@ -45,7 +45,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  top: 50%;
+  bottom: -3px;
   height: 2px;
   background-color: currentColor;
   -webkit-transform-origin: right;

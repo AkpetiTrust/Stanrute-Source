@@ -1,0 +1,52 @@
+.opening {
+  background-color: #fff;
+  padding: 20px 40px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 25px rgba(0, 0, 0, 0.05);
+  margin: 70px 0;
+  color: #00422e;
+
+  .title {
+    font-weight: 800;
+    font-size: 1.2em;
+  }
+
+  .status {
+    font-weight: 600;
+  }
+
+  .btn_group {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+
+    .btn_green {
+      padding: 3px 13px;
+      border-radius: 50px;
+      background-color: #e5fff4;
+      font-weight: 700;
+      font-weight: 500;
+    }
+
+    :global(.btn-primary) {
+      padding: 3px 20px;
+      font-weight: 500;
+      font-size: 0.9em;
+    }
+  }
+}
+
+@media screen and(max-width: 450px) {
+  .opening .btn_group {
+    flex-direction: column;
+
+    .btn_green {
+      width: 80%;
+    }
+
+    :global(.btn-primary) {
+      width: fit-content;
+      margin-top: 20px;
+    }
+  }
+}

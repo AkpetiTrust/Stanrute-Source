@@ -1,0 +1,61 @@
+.opening {
+  background-color: #fff;
+  padding: 20px 40px;
+  border-radius: 15px;
+  -webkit-box-shadow: 2px 2px 25px rgba(0, 0, 0, 0.05);
+          box-shadow: 2px 2px 25px rgba(0, 0, 0, 0.05);
+  margin: 70px 0;
+  color: #00422e;
+}
+
+.opening .title {
+  font-weight: 800;
+  font-size: 1.2em;
+}
+
+.opening .status {
+  font-weight: 600;
+}
+
+.opening .btn_group {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.opening .btn_group .btn_green {
+  padding: 3px 13px;
+  border-radius: 50px;
+  background-color: #e5fff4;
+  font-weight: 700;
+  font-weight: 500;
+}
+
+.opening .btn_group :global(.btn-primary) {
+  padding: 3px 20px;
+  font-weight: 500;
+  font-size: 0.9em;
+}
+
+@media screen and (max-width: 450px) {
+  .opening .btn_group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .opening .btn_group .btn_green {
+    width: 80%;
+  }
+  .opening .btn_group :global(.btn-primary) {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-top: 20px;
+  }
+}
+/*# sourceMappingURL=index.module.css.map */

@@ -121,7 +121,7 @@ body {
 }
 
 .hero h1 {
-  font-size: 3em;
+  font-size: 3.8em;
   font-weight: 700;
   line-height: 1em;
 }
@@ -139,6 +139,7 @@ body {
   background-color: #fff;
   font-size: 15px;
   font-weight: 700;
+  padding: 10px 30px;
 }
 
 .main {

@@ -21,7 +21,7 @@ $blue-color: #0067df;
   }
 
   .hero {
-    padding: 0 50px;
+    padding: 0 40px;
     padding-top: 200px;
     padding-bottom: 100px;
     text-align: center;
@@ -67,6 +67,61 @@ $blue-color: #0067df;
       line-height: 1em;
       margin-bottom: 10px;
     }
+
+    .select_group {
+      padding-top: 20px;
+      display: flex;
+      justify-content: start;
+
+      .filter {
+        background-color: #e5fff4;
+        margin-right: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        svg {
+          height: 30px;
+        }
+      }
+
+      select {
+        all: unset;
+        background-color: #e5fff4;
+        font-family: inherit;
+        padding: 10px;
+        padding-left: 15px;
+        width: 500px;
+        font-size: 1.2em;
+        font-weight: 800;
+        color: #00422e;
+        border-radius: 8px;
+        cursor: pointer;
+
+        option {
+          background-color: #fff;
+        }
+      }
+    }
+
+    .no_openings {
+      text-align: center;
+
+      .img_container {
+        max-width: 500px;
+        margin: 0 auto;
+        img {
+          max-width: 100%;
+        }
+      }
+
+      p {
+        font-size: 1.3em;
+        line-height: 1.2em;
+        font-weight: 600;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+    }
   }
 }
 
@@ -76,6 +131,16 @@ $blue-color: #0067df;
       left: 15px;
       top: 0;
       width: 170px;
+    }
+
+    .main .select_group {
+      .filter {
+        margin-right: 20px;
+      }
+
+      select {
+        width: unset;
+      }
     }
   }
 }
@@ -91,7 +156,7 @@ $blue-color: #0067df;
       padding-bottom: 70px;
     }
     .main {
-      padding: 50px 50px;
+      padding: 50px 40px;
     }
   }
 }

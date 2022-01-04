@@ -17,7 +17,7 @@
 }
 
 .career .hero {
-  padding: 0 50px;
+  padding: 0 40px;
   padding-top: 200px;
   padding-bottom: 100px;
   text-align: center;
@@ -67,11 +67,84 @@
   margin-bottom: 10px;
 }
 
+.career .main .select_group {
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.career .main .select_group .filter {
+  background-color: #e5fff4;
+  margin-right: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.career .main .select_group .filter svg {
+  height: 30px;
+}
+
+.career .main .select_group select {
+  all: unset;
+  background-color: #e5fff4;
+  font-family: inherit;
+  padding: 10px;
+  padding-left: 15px;
+  width: 500px;
+  font-size: 1.2em;
+  font-weight: 800;
+  color: #00422e;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.career .main .select_group select option {
+  background-color: #fff;
+}
+
+.career .main .no_openings {
+  text-align: center;
+}
+
+.career .main .no_openings .img_container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.career .main .no_openings .img_container img {
+  max-width: 100%;
+}
+
+.career .main .no_openings p {
+  font-size: 1.3em;
+  line-height: 1.2em;
+  font-weight: 600;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 @media screen and (max-width: 800px) {
   .career .logo {
     left: 15px;
     top: 0;
     width: 170px;
+  }
+  .career .main .select_group .filter {
+    margin-right: 20px;
+  }
+  .career .main .select_group select {
+    width: unset;
   }
 }
 
@@ -85,7 +158,7 @@
     padding-bottom: 70px;
   }
   .career .main {
-    padding: 50px 50px;
+    padding: 50px 40px;
   }
 }
 /*# sourceMappingURL=career.module.css.map */

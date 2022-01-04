@@ -13,7 +13,8 @@ export default function Hero() {
       </Navbar>
       <section className="inner">
         <h1>
-          Making everyone financially <span className="colored">free</span>{" "}
+          Your entry to the global <span className="colored">financial</span>{" "}
+          market{" "}
         </h1>
         <p>
           A platform that gives everyone an easy entry into the financial
