@@ -83,6 +83,10 @@ body {
           align-items: center;
 }
 
+.emoji {
+  font-weight: initial;
+}
+
 body {
   background-color: #f8fffc;
 }
@@ -421,7 +425,7 @@ body {
   max-width: 600px;
   position: relative;
   background-color: #fff;
-  height: 50px;
+  height: 60px;
   padding: 20px;
   border-radius: 5px;
   margin-top: 1.5rem;
@@ -470,11 +474,12 @@ body {
   position: absolute;
   z-index: 3;
   right: 10px;
-  top: 7px;
+  top: 12px;
   background-color: #0067df;
   color: #fff;
   padding: 5px 15px;
   height: 36px;
+  font-size: 0.9em;
 }
 
 .groove img {

@@ -74,9 +74,10 @@ export default function Main() {
           </section>
           <section className="talk">
             <p>
-              We're launching into a new normal in the world economy where your
-              digital assets determines to a great extent your financial state.
-              Learn how to harness the new economy today.
+              This is an upcoming innovative solution from us to shake the
+              Airtime space. We'll bring with this mouthwatering offers that you
+              almost can't believe. Look out for us{" "}
+              <span className="emoji">🤩</span>
             </p>
             <a href="#" className="btn btn-primary btn-soon">
               Coming soon
