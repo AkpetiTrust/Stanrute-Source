@@ -2,15 +2,27 @@
   width: 100%;
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-rows: 90px 240px 70px;
   background-color: #fff;
   margin-bottom: 100px;
   box-shadow: 2px 2px 20px rgba(140, 140, 140, 0.2);
   border-radius: 10px;
 }
 
+:global(.talk-title) {
+  grid-column: 1 / 2;
+  grid-row: 1/2;
+  font-size: 2em;
+  padding-left: 40px;
+  line-height: 1em;
+  align-self: flex-end;
+}
+
 :global(.image-container) {
   background-color: currentColor;
   overflow: hidden;
+  grid-column: 2 / 3;
+  grid-row: 1 / 4;
   img {
     height: 400px;
     object-fit: cover;
@@ -19,10 +31,9 @@
 }
 
 :global(.talk) {
-  padding: 40px;
-  h3 {
-    font-size: 2em;
-  }
+  padding: 0 40px;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
   p {
     color: #000;
     font-size: 1.3em;
@@ -37,12 +48,11 @@
 
 .reverse {
   :global(.image-container) {
-    grid-column: 1;
-    grid-row: 1;
+    grid-column: 1/ 2;
   }
-  :global(.talk) {
-    grid-column: 2;
-    grid-row: 1;
+  :global(.talk),
+  :global(.talk-title) {
+    grid-column: 2 /3;
   }
 }
 
@@ -50,6 +60,11 @@
   .service {
     display: block;
   }
+
+  :global(.talk-title) {
+    padding: 20px;
+  }
+
   :global(.talk) {
     padding: 20px;
   }

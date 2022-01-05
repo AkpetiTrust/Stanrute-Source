@@ -4,11 +4,11 @@ import TestimonyPic from "./images/testimony.png";
 export default function Testimony() {
   return (
     <section className="testimony grid">
+      <h3>What are people saying?</h3>
       <figure className="testimony-image">
         <img src={TestimonyPic} alt="testimony" />
       </figure>
       <section className="testimony-talk">
-        <h3>What are people saying?</h3>
         <div className="card">
           <p>
             If I had to choose again, I'll go for Stanrute! The experience of
