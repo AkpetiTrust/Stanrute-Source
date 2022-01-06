@@ -135,6 +135,10 @@
 }
 
 @media screen and (max-width: 800px) {
+  .career .hero h1,
+  .career .main h1 {
+    font-size: 2.5em;
+  }
   .career .logo {
     left: 15px;
     top: 0;

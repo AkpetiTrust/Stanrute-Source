@@ -92,4 +92,10 @@
     font-size: 0.8em;
   }
 }
+
+@media screen and (max-width: 800px) {
+  .card .card_talk :global(.text-primary) {
+    font-size: 1.1em;
+  }
+}
 /*# sourceMappingURL=index.module.css.map */

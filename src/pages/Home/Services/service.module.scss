@@ -63,10 +63,15 @@
 
   :global(.talk-title) {
     padding: 20px;
+    font-size: 1.5em;
   }
 
   :global(.talk) {
     padding: 20px;
+
+    p {
+      font-size: 1.1em;
+    }
   }
 
   :global(.image-container) {

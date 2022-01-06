@@ -556,6 +556,12 @@ body {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("./css/hero_bg.jpg");
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./css/hero_bg.jpg");
   }
+  .hero h1 {
+    font-size: 2.5em;
+  }
+  .hero p {
+    font-size: 1.1em;
+  }
   .hero .logo {
     left: 30px;
     top: 0;
@@ -571,12 +577,31 @@ body {
   }
   .main h1 {
     width: 100%;
+    font-size: 2.5em;
   }
   .features p.features-talk {
     width: 100%;
   }
+  .features p {
+    font-size: 1.1em;
+  }
+  .features .inner .feature .feature-title {
+    font-size: 2em;
+  }
   .features .watermark {
     right: -20px;
+  }
+  .testimony h3 {
+    font-size: 2em;
+  }
+  .testimony .testimony-talk .card p {
+    font-size: 1.1em;
+  }
+  .testimony .testimony-talk .name-container p {
+    font-size: 1em;
+  }
+  .groove p {
+    font-size: 1.1em;
   }
 }
 

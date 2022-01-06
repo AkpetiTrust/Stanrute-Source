@@ -40,10 +40,6 @@
   .opening .btn_group {
     flex-direction: column;
 
-    .btn_green {
-      width: 80%;
-    }
-
     :global(.btn-primary) {
       width: fit-content;
       margin-top: 20px;

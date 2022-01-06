@@ -127,6 +127,11 @@ $blue-color: #0067df;
 
 @media screen and(max-width: 800px) {
   .career {
+    .hero h1,
+    .main h1 {
+      font-size: 2.5em;
+    }
+
     .logo {
       left: 15px;
       top: 0;
