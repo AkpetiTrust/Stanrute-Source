@@ -39,16 +39,47 @@ export default function Testimony() {
     index: 0,
   });
 
+  const [translate, setTranslate] = useState(0);
+
+  // Function to go to next slide
+  const next = (activeSlide) => {
+    let newActiveIndex = activeSlide.index + 1;
+    newActiveIndex > slides.length - 1
+      ? (newActiveIndex = 0)
+      : (newActiveIndex = newActiveIndex);
+    setTranslate(newActiveIndex * 100);
+    return slides[newActiveIndex];
+  };
+
+  // Function to go to previous slide
+  const previous = (activeSlide) => {
+    let newActiveIndex = activeSlide.index - 1;
+    newActiveIndex < 0
+      ? (newActiveIndex = 0)
+      : (newActiveIndex = newActiveIndex);
+    setTranslate(newActiveIndex * 100);
+    return slides[newActiveIndex];
+  };
+
   return (
     <section className={style.testimony}>
       <h3 className={style.title}>What are people saying?</h3>
       <img src={activeSlide.img} className={style.img} alt="Image" />
       <div className={style.slides_container}>
-        <div className={style.slides}>
+        <div
+          className={style.slides}
+          style={{ transform: `translateX(${-translate}%)` }}
+        >
           {slides.map((slide) => (
             <div className={style.slide} key={slide.index}>
               <div className={style.btn_group}>
-                <button>
+                <button
+                  onClick={() => {
+                    setActiveSlide((prevActiveSlide) =>
+                      previous(prevActiveSlide)
+                    );
+                  }}
+                >
                   <svg
                     width="24"
                     height="24"
@@ -65,7 +96,11 @@ export default function Testimony() {
                     />
                   </svg>
                 </button>
-                <button>
+                <button
+                  onClick={() => {
+                    setActiveSlide((prevActiveSlide) => next(prevActiveSlide));
+                  }}
+                >
                   <svg
                     width="24"
                     height="24"
