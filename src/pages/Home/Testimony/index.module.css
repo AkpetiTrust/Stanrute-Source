@@ -124,12 +124,9 @@
   width: 5px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1150px) {
   .testimony {
     display: block;
-  }
-  .testimony .title {
-    font-size: 2em;
   }
   .testimony .img {
     max-width: 100%;
@@ -137,6 +134,12 @@
   }
   .testimony .card {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .testimony .title {
+    font-size: 2em;
   }
   .testimony .card p {
     font-size: 1.1em;

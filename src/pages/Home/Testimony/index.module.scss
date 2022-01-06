@@ -97,13 +97,9 @@
   }
 }
 
-@media screen and(max-width:800px) {
+@media screen and(max-width:1150px) {
   .testimony {
     display: block;
-
-    .title {
-      font-size: 2em;
-    }
 
     .img {
       max-width: 100%;
@@ -112,6 +108,17 @@
 
     .card {
       margin-bottom: 30px;
+    }
+  }
+}
+
+@media screen and(max-width:800px) {
+  .testimony {
+    .title {
+      font-size: 2em;
+    }
+
+    .card {
       p {
         font-size: 1.1em;
       }
