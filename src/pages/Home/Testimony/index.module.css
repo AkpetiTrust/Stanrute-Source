@@ -1,0 +1,149 @@
+.testimony {
+  margin-top: 150px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 10% 100% 10px;
+      grid-template-rows: 10% 100% 10px;
+  grid-column-gap: 40px;
+}
+
+.img {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / 3;
+}
+
+.title,
+.slides_container {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+}
+
+.title {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  color: #2f2e41;
+  font-size: 2.5em;
+  font-weight: 700;
+  line-height: 1em;
+  margin-bottom: 20px;
+}
+
+.slides_container {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
+  overflow: hidden;
+}
+
+.slides {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+
+.slide {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 100%;
+  position: relative;
+}
+
+.btn_group {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 110px;
+}
+
+.btn_group button {
+  all: unset;
+  cursor: pointer;
+  background-color: #009153;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  padding: 7px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 0 10px 10px 10px;
+  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  min-height: 170px;
+  padding: 30px;
+}
+
+.card p {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+}
+
+.name,
+.position {
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  padding-left: 40px;
+}
+
+.name {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.name::before {
+  background-color: #000;
+  content: "";
+  height: 5px;
+  left: 20px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 5px;
+}
+
+@media screen and (max-width: 800px) {
+  .testimony {
+    display: block;
+  }
+  .testimony .title {
+    font-size: 2em;
+  }
+  .testimony .img {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+  .testimony .card {
+    margin-bottom: 30px;
+  }
+  .testimony .card p {
+    font-size: 1.1em;
+  }
+  .testimony .name,
+  .testimony .position {
+    font-size: 1em;
+  }
+}
+/*# sourceMappingURL=index.module.css.map */

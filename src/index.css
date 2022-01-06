@@ -310,95 +310,6 @@ body {
   font-size: 1.5rem;
 }
 
-.testimony {
-  margin-top: 150px;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 10% 100% 10px;
-      grid-template-rows: 10% 100% 10px;
-  grid-column-gap: 40px;
-}
-
-.testimony h3 {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2 / 3;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1 / 2;
-  margin-bottom: 20px;
-  font-size: 2.5em;
-  font-weight: 700;
-  line-height: 1em;
-  max-width: 500px;
-  color: #2f2e41;
-}
-
-.testimony .testimony-image {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1 / 2;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  grid-row: 1 / 3;
-}
-
-.testimony .testimony-image img {
-  max-width: 100%;
-}
-
-.testimony .testimony-talk {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2 / 3;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2 / 3;
-}
-
-.testimony .testimony-talk .card {
-  background-color: #fff;
-  padding: 30px;
-  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 0px 10px 10px 10px;
-  min-height: 170px;
-  margin-bottom: 30px;
-}
-
-.testimony .testimony-talk .card p {
-  font-weight: 600;
-  font-size: 1.4rem;
-  line-height: 1.5rem;
-}
-
-.testimony .testimony-talk .name-container {
-  padding-left: 40px;
-}
-
-.testimony .testimony-talk .name-container p {
-  font-weight: 600;
-  font-size: 1.2rem;
-  line-height: 1.5rem;
-}
-
-.testimony .testimony-talk .name-container .name {
-  margin-bottom: 10px;
-  position: relative;
-}
-
-.testimony .testimony-talk .name-container .name::before {
-  content: "";
-  position: absolute;
-  left: -20px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  width: 5px;
-  height: 5px;
-  background-color: #000;
-}
-
 .groove {
   width: 100%;
   min-height: 400px;
@@ -521,21 +432,6 @@ body {
   .features .inner figure figcaption {
     text-align: left;
   }
-  .testimony {
-    display: block;
-  }
-  .testimony .testimony-image {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-bottom: 30px;
-  }
   .groove img {
     right: 20px;
     height: 300px;
@@ -591,23 +487,18 @@ body {
   .features .watermark {
     right: -20px;
   }
-  .testimony h3 {
-    font-size: 2em;
-  }
-  .testimony .testimony-talk .card p {
-    font-size: 1.1em;
-  }
-  .testimony .testimony-talk .name-container p {
-    font-size: 1em;
-  }
   .groove p {
     font-size: 1.1em;
   }
 }
 
 @media screen and (max-width: 600px) {
+  .features .inner figure {
+    padding-left: 0;
+  }
   .features .inner figure img {
     max-width: 100%;
+    max-height: unset;
   }
   .groove {
     padding: 25px;
