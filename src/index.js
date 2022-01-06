@@ -10,7 +10,7 @@ import ScrollToTop from "./ScrollToTop";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
+    <Router >
       <ScrollToTop />
       <Routes>
         <Route path='/' exact element={<Home />} />
