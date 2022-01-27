@@ -13,13 +13,9 @@ export default function Hero() {
       </Navbar>
       <section className="inner">
         <h1>
-          Your entry to the global <span className="colored">financial</span>{" "}
-          market{" "}
+          Transactions only got <span className="colored">better</span>
         </h1>
-        <p>
-          A platform that gives everyone an easy entry into the financial
-          ecosystem of the future.
-        </p>
+        <p>Better experience on transactions. Trade your assets with ease.</p>
         <a href="#" className="btn">
           Get Started
         </a>

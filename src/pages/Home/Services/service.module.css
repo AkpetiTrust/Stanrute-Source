@@ -93,6 +93,7 @@
   }
   :global(.talk) p {
     font-size: 1.1em;
+    font-weight: initial;
   }
   :global(.image-container) img {
     height: unset;

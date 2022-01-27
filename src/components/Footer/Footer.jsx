@@ -26,7 +26,7 @@ export default function Footer() {
           <a href="/">Terms of Services</a>
           <a href="/">Privacy Policy</a>
         </div>
-        <div className={style.col_3}>Address goes here</div>
+        <div className={style.col_3}>13 Dieke Avenue, Delta State.</div>
       </div>
 
       <div className={style.social_icons}>

@@ -47,43 +47,6 @@ export default function Main() {
             </a>
           </section>
         </Service>
-
-        <Service backgroundColor={"#e1ebff"}>
-          <h3 className="talk-title text-secondary">
-            Financial Market Education
-          </h3>
-          <section className="image-container center">
-            <img src={Education} alt="Education" />
-          </section>
-          <section className="talk">
-            <p>
-              We're launching into a new normal in the world economy where your
-              digital assets determines to a great extent your financial state.
-              Learn how to harness the new economy today.
-            </p>
-            <a href="#" className="btn btn-secondary">
-              Start Learning
-            </a>
-          </section>
-        </Service>
-
-        <Service backgroundColor={"#E5FFF4"} reverse={true}>
-          <h3 className="talk-title text-primary">Airtime Groove</h3>
-          <section className="image-container center">
-            <img src={Airtime} alt="Airtime Groove" />
-          </section>
-          <section className="talk">
-            <p>
-              This is an upcoming innovative solution from us to shake the
-              Airtime space. We'll bring with this mouthwatering offers that you
-              almost can't believe. Look out for us{" "}
-              <span className="emoji">🤩</span>
-            </p>
-            <a href="#" className="btn btn-primary btn-soon">
-              Coming soon
-            </a>
-          </section>
-        </Service>
       </section>
       <Features />
       <Testimony />
