@@ -23,7 +23,7 @@ export default function Main() {
           <section className="talk">
             <p>
               You can trade and save your digital assets with us - we're
-              building out a platform for this. Reach out fo us to learn more.
+              building out a platform for this. Reach out to us to learn more.
             </p>
             <a href="#" className="btn btn-secondary">
               Talk to us
