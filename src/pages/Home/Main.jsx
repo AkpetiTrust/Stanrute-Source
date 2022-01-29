@@ -5,8 +5,7 @@ import Testimony from "./Testimony/Testimony";
 import Groove from "./Groove";
 import Etrading from "./images/e-trading.png";
 import GiftCard from "./images/gift_card.png";
-import Education from "./images/education.png";
-import Airtime from "./images/airtime.png";
+import Beta from "./Beta/Beta";
 
 export default function Main() {
   return (
@@ -49,8 +48,9 @@ export default function Main() {
         </Service>
       </section>
       <Features />
-      <Testimony />
+      <Beta />
       <Groove />
+      <Testimony />
     </section>
   );
 }

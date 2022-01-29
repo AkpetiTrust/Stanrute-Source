@@ -202,6 +202,8 @@ body {
 
 .features .features-title {
   margin-bottom: 40px;
+  max-width: 800px;
+  width: unset;
 }
 
 .features .features-talk {
@@ -279,8 +281,8 @@ body {
 
 .features .features-talk .background .colors .green {
   background-color: #00cc75;
-  -webkit-clip-path: polygon(0 0, 76% 0, 95% 100%, 0% 100%);
-          clip-path: polygon(0 0, 76% 0, 95% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0 0, 77% 0, 97% 100%, 0% 100%);
+          clip-path: polygon(0 0, 77% 0, 97% 100%, 0% 100%);
 }
 
 .features .features-talk .background .colors .orange {
