@@ -7,6 +7,7 @@ import Etrading from "./images/e-trading.png";
 import GiftCard from "./images/gift_card.png";
 import Beta from "./Beta/Beta";
 import ChooseUs from "./ChooseUs/ChooseUs";
+import Learn from "./Learn/Learn";
 
 export default function Main() {
   return (
@@ -50,6 +51,7 @@ export default function Main() {
       </section>
       <ChooseUs />
       <Features />
+      <Learn />
       <Beta />
       <Groove />
       <Testimony />

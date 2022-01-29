@@ -15,7 +15,10 @@ export default function Hero() {
         <h1>
           Transactions only got <span className="colored">better</span>
         </h1>
-        <p>Better experience on transactions. Trade your assets with ease.</p>
+        <p>
+          A safe platform to trade digital assets and perform everyday
+          transactions.
+        </p>
         <a href="#" className="btn">
           Get Started
         </a>

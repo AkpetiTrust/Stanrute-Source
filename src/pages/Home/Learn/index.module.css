@@ -1,0 +1,81 @@
+.learn {
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.learn > h1,
+.learn :global(.center p) {
+  text-align: center;
+  width: 100%;
+}
+
+.learn > :global(.center p) {
+  max-width: 700px;
+  width: unset;
+  line-height: 1.2em;
+  margin-top: 10px;
+}
+
+.learn .cards {
+  padding-top: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+}
+
+.learn .link {
+  all: unset;
+  display: inline-block;
+  margin-top: 40px;
+  font-size: 1.4em;
+  cursor: pointer;
+  font-weight: 800;
+  position: relative;
+}
+
+.learn .link::before {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #ffc01e;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+.learn .link:hover::before {
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+@media screen and (max-width: 1300px) {
+  .learn .cards {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .learn > h1,
+  .learn :global(.center p) {
+    text-align: left;
+  }
+  .learn .cards {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-row-gap: 40px;
+    place-items: center;
+  }
+}
+/*# sourceMappingURL=index.module.css.map */

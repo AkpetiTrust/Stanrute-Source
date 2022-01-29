@@ -70,17 +70,19 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 110px;
+  width: 130px;
+  z-index: 3;
 }
 
 .btn_group button {
   all: unset;
   cursor: pointer;
-  background-color: #009153;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  padding: 7px;
+  width: 45px;
+  height: 45px;
+}
+
+.btn_group button svg {
+  max-width: 100%;
 }
 
 .card {
@@ -133,6 +135,12 @@
   }
   .testimony .card {
     margin-bottom: 30px;
+  }
+  .testimony .btn_group {
+    width: 100px;
+  }
+  .testimony .btn_group button svg {
+    max-height: 100%;
   }
 }
 
