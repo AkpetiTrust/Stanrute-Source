@@ -23,11 +23,12 @@ export default function Main() {
           </section>
           <section className="talk">
             <p>
-              You can trade and save your digital assets with us - we're
-              building out a platform for this. Reach out to us to learn more.
+              Trust our secured platform and process with your digital assets
+              (Non-Fungible Tokens), e-currencies (cryptocurrencies). Trade at
+              good rates.
             </p>
             <a href="#" className="btn btn-secondary">
-              Talk to us
+              Trade with us
             </a>
           </section>
         </Service>
@@ -39,12 +40,11 @@ export default function Main() {
           </section>
           <section className="talk">
             <p>
-              We have a secure system and good rates in our Gift Cards Trading.
-              You can buy and sell all types of Gift Cards with us. Reach out
-              immediately.
+              We buy various types of gift cards from over 15 countries.
+              Experience convenience and security while trading your cards.
             </p>
             <a href="#" className="btn btn-primary">
-              Get started
+              Start Trading
             </a>
           </section>
         </Service>
