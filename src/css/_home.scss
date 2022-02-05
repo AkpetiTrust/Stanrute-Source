@@ -44,6 +44,14 @@ body {
   p {
     font-size: 1.2em;
     margin: 15px 0;
+    span {
+      display: inline-block;
+      height: 15px;
+      width: 3px;
+      background-color: #fff;
+      margin-left: 1px;
+      animation: blink 0.5s linear infinite alternate;
+    }
   }
 
   .btn {
@@ -413,5 +421,14 @@ body {
 
   to {
     background-position-y: -90%;
+  }
+}
+
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
   }
 }

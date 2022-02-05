@@ -139,6 +139,16 @@ body {
   margin: 15px 0;
 }
 
+.hero p span {
+  display: inline-block;
+  height: 15px;
+  width: 3px;
+  background-color: #fff;
+  margin-left: 1px;
+  -webkit-animation: blink 0.5s linear infinite alternate;
+          animation: blink 0.5s linear infinite alternate;
+}
+
 .hero .btn {
   background-color: #fff;
   font-size: 15px;
@@ -530,6 +540,24 @@ body {
   }
   to {
     background-position-y: -90%;
+  }
+}
+
+@-webkit-keyframes blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
   }
 }
 /*# sourceMappingURL=index.css.map */

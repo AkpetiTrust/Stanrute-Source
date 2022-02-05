@@ -9,7 +9,7 @@ export default function Features() {
         <img src={LogoWatermark} alt="watermark" />
       </div>
 
-      <h1 className="features-title text-primary">
+      <h1 className="features-title text-primary" data-aos="fade-right">
         Enjoy the support of a community &amp; our team of experts
       </h1>
       <section className="features-talk">

@@ -5,7 +5,7 @@ import rating from "./Rating.svg";
 
 export default function LearnCard({ text }) {
   return (
-    <div className={style.card}>
+    <div className={style.card} data-aos="flip-right" data-aos-duration="1000">
       <button className={`btn ${style.status}`} disabled>
         Upcoming Class
       </button>

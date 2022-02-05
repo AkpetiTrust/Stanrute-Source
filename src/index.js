@@ -8,6 +8,13 @@ import Academy from "./pages/Academy/Academy";
 import Career from "./pages/Career/Career";
 import ScrollToTop from "./ScrollToTop";
 
+import AOS from "aos";
+import 'aos/dist/aos.css';
+AOS.init({
+  once: true,
+})
+
+
 ReactDOM.render(
   <React.StrictMode>
     <Router >

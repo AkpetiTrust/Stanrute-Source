@@ -1,4 +1,5 @@
-import { React, useState } from "react";
+import { React, useState, useEffect } from "react";
+import useInterval from "../useInterval";
 import style from "./index.module.css";
 import Samuel from "./Samuel.png";
 import Desmund from "./Desmund.png";
@@ -68,6 +69,8 @@ export default function Testimony() {
 
   const [translate, setTranslate] = useState(0);
 
+  const [timeStamp, setTimeStamp] = useState(new Date().getTime() / 1000);
+
   // Function to go to next slide
   const next = (activeSlide) => {
     let newActiveIndex = activeSlide.index + 1;
@@ -88,6 +91,13 @@ export default function Testimony() {
     return slides[newActiveIndex];
   };
 
+  useInterval(() => {
+    if (new Date().getTime() / 1000 - timeStamp > 2) {
+      setTimeStamp(new Date().getTime() / 1000);
+      setActiveSlide((prevActiveSlide) => next(prevActiveSlide));
+    }
+  }, 1500);
+
   return (
     <section className={style.testimony}>
       <h3 className={style.title}>What are people saying?</h3>
@@ -102,6 +112,7 @@ export default function Testimony() {
               <div className={style.btn_group}>
                 <button
                   onClick={() => {
+                    setTimeStamp(new Date().getTime() / 1000);
                     setActiveSlide((prevActiveSlide) =>
                       previous(prevActiveSlide)
                     );
@@ -122,6 +133,7 @@ export default function Testimony() {
                 </button>
                 <button
                   onClick={() => {
+                    setTimeStamp(new Date().getTime() / 1000);
                     setActiveSlide((prevActiveSlide) => next(prevActiveSlide));
                   }}
                 >

@@ -6,6 +6,7 @@ export default function Service({ children, backgroundColor, reverse }) {
     <section
       className={`${style.service} ${reverse ? style.reverse : ""}`}
       style={{ color: backgroundColor }}
+      data-aos="fade-up"
     >
       {children}
     </section>
