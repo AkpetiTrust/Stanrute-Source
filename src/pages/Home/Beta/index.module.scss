@@ -92,7 +92,12 @@
       display: none;
     }
     figure {
-      max-height: 200px;
+      max-height: unset;
+      display: initial;
+      img {
+        max-width: 100%;
+        max-height: unset;
+      }
     }
     .talk {
       .app_feature .app_feature_talk {

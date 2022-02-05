@@ -119,7 +119,12 @@
     display: none;
   }
   .beta figure {
-    max-height: 200px;
+    max-height: unset;
+    display: initial;
+  }
+  .beta figure img {
+    max-width: 100%;
+    max-height: unset;
   }
   .beta .talk .app_feature .app_feature_talk {
     -ms-grid-column: 1;
