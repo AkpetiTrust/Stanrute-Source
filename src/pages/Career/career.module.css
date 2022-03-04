@@ -30,10 +30,6 @@
   font-weight: 700;
   line-height: 1em;
   margin-bottom: 10px;
-  color: #dadada;
-}
-
-.career .hero h1 span {
   color: #fff;
 }
 
@@ -118,8 +114,8 @@
 }
 
 .career .main .no_openings .img_container {
-  max-width: 500px;
-  margin: 0 auto;
+  max-width: 250px;
+  margin: 50px auto;
 }
 
 .career .main .no_openings .img_container img {

@@ -19,7 +19,7 @@ AOS.init({
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router >
+    <Router>
       <ScrollToTop />
       <Routes>
         <Route path='/' exact element={<Home />} />

@@ -23,7 +23,7 @@ export default function Academy() {
             the tools and dynamics of the financial market.
           </p>
         </div>
-        <a href="/" className="btn">
+        <a href="https://wa.me/2348088261852" className="btn">
           Get Started
         </a>
       </section>

@@ -44,16 +44,14 @@ export default function Career() {
         </Link>
       </Navbar>
       <section className={style.hero}>
-        <h1>
-          We are <span>Stanrute</span>
-        </h1>
+        <h1>You're a builder?</h1>
         <div className="center">
           <p>
             Our team is building magic for the new financial economy. Join us
             today.
           </p>
         </div>
-        <a href="/" className="btn">
+        <a href="https://wa.me/2348088261852" className="btn">
           Apply
         </a>
       </section>

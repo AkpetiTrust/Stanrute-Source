@@ -19,7 +19,7 @@ export default function Footer() {
           <p className={style.column_heading}>Company</p>
           <Link to="/careers">Career</Link>
           <Link to="/academy">Academy</Link>
-          <Link to="/contact">Contact us</Link>
+          <a href="https://wa.me/2348088261852">Contact us</a>
         </div>
         <div className={style.col_2}>
           <p className={style.column_heading}>Legal</p>

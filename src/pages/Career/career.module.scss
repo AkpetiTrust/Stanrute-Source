@@ -32,10 +32,7 @@ $blue-color: #0067df;
       font-weight: 700;
       line-height: 1em;
       margin-bottom: 10px;
-      color: #dadada;
-      span {
-        color: #fff;
-      }
+      color: #fff;
     }
 
     p {
@@ -107,8 +104,8 @@ $blue-color: #0067df;
       text-align: center;
 
       .img_container {
-        max-width: 500px;
-        margin: 0 auto;
+        max-width: 250px;
+        margin: 50px auto;
         img {
           max-width: 100%;
         }

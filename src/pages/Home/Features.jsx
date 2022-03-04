@@ -18,7 +18,7 @@ export default function Features() {
           <li>Trading tips and guides</li>
           <li>Learning Resources</li>
         </ul>
-        <a href="#" className="btn">
+        <a href="https://wa.me/2348088261852" className="btn">
           Join our community
         </a>
         <div className="background" aria-hidden>

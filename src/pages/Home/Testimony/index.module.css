@@ -130,8 +130,10 @@
     display: block;
   }
   .testimony .img {
-    max-width: 100%;
+    max-width: 50%;
+    margin: auto;
     margin-bottom: 30px;
+    display: block;
   }
   .testimony .card {
     margin-bottom: 30px;

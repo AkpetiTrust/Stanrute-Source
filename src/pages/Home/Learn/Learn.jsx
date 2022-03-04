@@ -15,7 +15,7 @@ export default function Learn() {
         <LearnCard text={"Learn the basics of cryptocurrency"} />
         <LearnCard text={"How to Create an NFT"} />
       </div>
-      <a href="#" className={style.link}>
+      <a href="https://wa.me/2348088261852" className={style.link}>
         Join now
       </a>
     </section>
