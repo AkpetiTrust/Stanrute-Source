@@ -1,0 +1,117 @@
+.blog :global(.nav) {
+  background-color: #f8fffc;
+  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.blog .logo {
+  width: 200px;
+  position: absolute;
+  left: 40px;
+  top: 5px;
+  z-index: 3;
+}
+
+.blog .logo img {
+  max-width: 100%;
+  -webkit-filter: unset;
+          filter: unset;
+}
+
+.blog main {
+  padding: 0 50px;
+  padding-top: 150px;
+}
+
+.blog main .title {
+  font-size: 3.2em;
+  font-weight: 700;
+  line-height: 1.1em;
+  max-width: 500px;
+}
+
+.blog main .subtitle {
+  font-size: 1.2em;
+  margin-top: 10px;
+  color: #626262;
+  font-weight: 600;
+  max-width: 900px;
+}
+
+.blog main .section_heading {
+  font-weight: 600;
+}
+
+.blog main .recent_releases {
+  margin-top: 70px;
+}
+
+.blog main .recent_releases .inner {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 20px;
+  overflow: scroll;
+}
+
+.blog main .recent_releases .inner::-webkit-scrollbar {
+  height: 7px;
+}
+
+.blog main .popular {
+  margin-top: 70px;
+}
+
+.blog main .popular .inner {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 40px;
+}
+
+@media screen and (max-width: 960px) {
+  .blog main .popular .inner {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .blog :global(.nav) {
+    height: 90px;
+  }
+  .blog .logo {
+    left: 15px;
+    top: 0;
+    width: 170px;
+  }
+  .blog main .title {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .blog main {
+    padding: 0 30px;
+    padding-top: 120px;
+  }
+  .blog main .subtitle {
+    font-size: 1em;
+    font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .blog main .popular .inner {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    place-items: center;
+  }
+}
+/*# sourceMappingURL=blog.module.css.map */

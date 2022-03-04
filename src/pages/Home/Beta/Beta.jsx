@@ -59,8 +59,7 @@ export default function Beta() {
           <div className={style.app_feature_talk}>
             <p className={style.app_feature_title}>Instant Payment</p>
             <p>
-              Once your transaction is complete. You receive your payment within
-              48hrs after your transaction.
+              Once your transaction is confirmed, you get credited immediately.
             </p>
           </div>
         </div>

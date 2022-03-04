@@ -7,6 +7,7 @@ import Home from "./pages/Home/Home";
 import Academy from "./pages/Academy/Academy";
 import Career from "./pages/Career/Career";
 import About from "./pages/About/About";
+import Blog from "./pages/Blog/Blog";
 import ScrollToTop from "./ScrollToTop";
 
 import AOS from "aos";
@@ -25,6 +26,7 @@ ReactDOM.render(
         <Route path='/academy' exact element={<Academy />} />
         <Route path='/careers' exact element={<Career />} />
         <Route path='/about' exact element={<About />} />
+        <Route path='/blog' exact element={<Blog />} />
       </Routes>
     </Router>
   </React.StrictMode>,

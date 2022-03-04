@@ -42,49 +42,49 @@
   max-width: 720px;
 }
 
-main {
+.about main {
   padding: 20px 50px;
   background-image: url(./background.png);
   background-repeat: no-repeat;
 }
 
-main .talk {
+.about main .talk {
   margin-bottom: 50px;
 }
 
-main .talk > div {
+.about main .talk > div {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
 }
 
-main .talk > div:first-child {
+.about main .talk > div:first-child {
   -webkit-transform: translateY(20%);
           transform: translateY(20%);
 }
 
-main .talk > div:first-child .image_container img {
+.about main .talk > div:first-child .image_container img {
   max-width: 80%;
   -webkit-transform: translate(30%, -10%);
           transform: translate(30%, -10%);
 }
 
-main .talk > div:first-child p {
+.about main .talk > div:first-child p {
   max-width: 460px;
 }
 
-main .talk > div:nth-child(2) .image_container img {
+.about main .talk > div:nth-child(2) .image_container img {
   max-width: 100%;
 }
 
-main .talk > div:nth-child(2) div:first-child {
+.about main .talk > div:nth-child(2) div:first-child {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
 }
 
-main .talk > div:nth-child(2) div:first-child .title {
+.about main .talk > div:nth-child(2) div:first-child .title {
   font-size: 2.5em;
   font-weight: 800;
   color: #00422e;
@@ -93,7 +93,7 @@ main .talk > div:nth-child(2) div:first-child .title {
   position: relative;
 }
 
-main .talk > div:nth-child(2) div:first-child .title::before, main .talk > div:nth-child(2) div:first-child .title::after {
+.about main .talk > div:nth-child(2) div:first-child .title::before, .about main .talk > div:nth-child(2) div:first-child .title::after {
   content: "";
   position: absolute;
   width: 40px;
@@ -103,19 +103,19 @@ main .talk > div:nth-child(2) div:first-child .title::before, main .talk > div:n
           transform: translateY(50%);
 }
 
-main .talk > div:nth-child(2) div:first-child .title::before {
+.about main .talk > div:nth-child(2) div:first-child .title::before {
   left: 0;
   top: -10px;
   background-color: #99ffd3;
 }
 
-main .talk > div:nth-child(2) div:first-child .title::after {
+.about main .talk > div:nth-child(2) div:first-child .title::after {
   left: 10px;
   top: 0;
   background-color: currentColor;
 }
 
-main .talk > div p {
+.about main .talk > div p {
   color: #626262;
   font-size: 1.2em;
   -ms-flex-item-align: center;
@@ -159,9 +159,15 @@ main .talk > div p {
     padding: 20px 30px;
   }
   .about main .talk > div {
+    display: block;
+  }
+  .about main .talk > div:first-child {
     -webkit-transform: translateY(0);
             transform: translateY(0);
-    display: block;
+  }
+  .about main .talk > div:first-child .image_container img {
+    max-width: unset;
+    height: 100%;
   }
   .about main .talk > div .image_container {
     height: 300px;

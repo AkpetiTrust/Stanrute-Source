@@ -1,0 +1,127 @@
+.blog {
+  :global(.nav) {
+    background-color: #f8fffc;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  .logo {
+    width: 200px;
+    position: absolute;
+    left: 40px;
+    top: 5px;
+    z-index: 3;
+    img {
+      max-width: 100%;
+      filter: unset;
+    }
+  }
+
+  main {
+    padding: 0 50px;
+    padding-top: 150px;
+    .title {
+      font-size: 3.2em;
+      font-weight: 700;
+      line-height: 1.1em;
+      max-width: 500px;
+    }
+
+    .subtitle {
+      font-size: 1.2em;
+      margin-top: 10px;
+      color: #626262;
+      font-weight: 600;
+      max-width: 900px;
+    }
+
+    .section_heading {
+      font-weight: 600;
+    }
+
+    .recent_releases {
+      margin-top: 70px;
+
+      .inner {
+        margin-top: 20px;
+        padding-bottom: 20px;
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 20px;
+        overflow: scroll;
+        &::-webkit-scrollbar {
+          height: 7px;
+        }
+      }
+    }
+    .popular {
+      margin-top: 70px;
+
+      .inner {
+        margin-top: 20px;
+        padding-bottom: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 40px;
+      }
+    }
+  }
+}
+
+@media screen and(max-width:960px) {
+  .blog {
+    main {
+      .popular {
+        .inner {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 800px) {
+  .blog {
+    :global(.nav) {
+      height: 90px;
+    }
+    .logo {
+      left: 15px;
+      top: 0;
+      width: 170px;
+    }
+
+    main {
+      .title {
+        font-size: 2em;
+      }
+    }
+  }
+}
+
+@media screen and(max-width:700px) {
+  .blog {
+    main {
+      padding: 0 30px;
+      padding-top: 120px;
+
+      .subtitle {
+        font-size: 1em;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+@media screen and(max-width:650px) {
+  .blog {
+    main {
+      .popular {
+        .inner {
+          grid-template-columns: 1fr;
+          place-items: center;
+        }
+      }
+    }
+  }
+}
