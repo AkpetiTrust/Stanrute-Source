@@ -1,0 +1,184 @@
+.about :global(.nav) {
+  background-color: #f8fffc;
+}
+
+.about .logo {
+  width: 200px;
+  position: absolute;
+  left: 40px;
+  top: 5px;
+  z-index: 3;
+}
+
+.about .logo img {
+  max-width: 100%;
+  -webkit-filter: unset;
+          filter: unset;
+}
+
+.about .hero {
+  padding: 0 50px;
+  padding-top: 200px;
+  padding-bottom: 120px;
+  text-align: center;
+  background-color: #009153;
+  color: #fff;
+}
+
+.about .hero h1 {
+  font-size: 3em;
+  font-weight: 700;
+  line-height: 1em;
+  margin-bottom: 10px;
+}
+
+.about .hero h1 span {
+  color: #dadada;
+}
+
+.about .hero p {
+  font-size: 1.2em;
+  line-height: 1.2em;
+  max-width: 720px;
+}
+
+main {
+  padding: 20px 50px;
+  background-image: url(./background.png);
+  background-repeat: no-repeat;
+}
+
+main .talk {
+  margin-bottom: 50px;
+}
+
+main .talk > div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+main .talk > div:first-child {
+  -webkit-transform: translateY(20%);
+          transform: translateY(20%);
+}
+
+main .talk > div:first-child .image_container img {
+  max-width: 80%;
+  -webkit-transform: translate(30%, -10%);
+          transform: translate(30%, -10%);
+}
+
+main .talk > div:first-child p {
+  max-width: 460px;
+}
+
+main .talk > div:nth-child(2) .image_container img {
+  max-width: 100%;
+}
+
+main .talk > div:nth-child(2) div:first-child {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+main .talk > div:nth-child(2) div:first-child .title {
+  font-size: 2.5em;
+  font-weight: 800;
+  color: #00422e;
+  padding-left: 70px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+main .talk > div:nth-child(2) div:first-child .title::before, main .talk > div:nth-child(2) div:first-child .title::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+
+main .talk > div:nth-child(2) div:first-child .title::before {
+  left: 0;
+  top: -10px;
+  background-color: #99ffd3;
+}
+
+main .talk > div:nth-child(2) div:first-child .title::after {
+  left: 10px;
+  top: 0;
+  background-color: currentColor;
+}
+
+main .talk > div p {
+  color: #626262;
+  font-size: 1.2em;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media screen and (max-width: 930px) {
+  .about main .talk > div {
+    grid-column-gap: 20px;
+  }
+  .about main .talk > div:first-child .image_container img {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .about .logo {
+    left: 15px;
+    top: 0;
+    width: 170px;
+  }
+  .about .hero h1,
+  .about .main h1 {
+    font-size: 2.5em;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .about :global(.nav) {
+    height: 110px;
+  }
+  .about .hero {
+    text-align: left;
+    padding: 0 30px;
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
+  .about main {
+    padding: 20px 30px;
+  }
+  .about main .talk > div {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    display: block;
+  }
+  .about main .talk > div .image_container {
+    height: 300px;
+  }
+  .about main .talk > div .image_container img {
+    max-width: unset;
+    height: 100%;
+  }
+  .about main .talk > div p {
+    max-width: 100%;
+    font-size: 1em;
+  }
+  .about main .talk > div:nth-child(2) {
+    margin-top: 50px;
+  }
+  .about main .talk > div:nth-child(2) div:first-child .title {
+    margin-bottom: 0;
+  }
+}
+/*# sourceMappingURL=about.module.css.map */
