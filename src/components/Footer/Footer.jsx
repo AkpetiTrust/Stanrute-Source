@@ -30,10 +30,10 @@ export default function Footer() {
       </div>
 
       <div className={style.social_icons}>
-        <a href="/">
+        <a href="https://wa.me/2348088261852">
           <img src={whatsapp} alt="whatsapp" />
         </a>
-        <a href="/">
+        <a href="https://www.instagram.com/mystanrute_/">
           <img src={instagram} alt="instagram" />
         </a>
         <a href="/">

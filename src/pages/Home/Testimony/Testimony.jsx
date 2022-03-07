@@ -5,6 +5,7 @@ import Samuel from "./Samuel.png";
 import Desmund from "./Desmund.png";
 import Bright from "./Bright.png";
 import Daniel from "./Daniel.png";
+import Miracle from "./Miracle.png";
 
 export default function Testimony() {
   const [slides, setSlides] = useState([
@@ -53,6 +54,14 @@ export default function Testimony() {
       position: "",
       index: 3,
     },
+    {
+      img: Miracle,
+      testimony: `Stanrute is the best Crypto exchange brand I've traded with. You won't really know until you try. Trade with Stanrute and I promise you, you will testify
+        `,
+      name: "Miracle Jesuhovie",
+      position: "",
+      index: 4,
+    },
   ]);
 
   const [activeSlide, setActiveSlide] = useState({
@@ -96,7 +105,7 @@ export default function Testimony() {
       setTimeStamp(new Date().getTime() / 1000);
       setActiveSlide((prevActiveSlide) => next(prevActiveSlide));
     }
-  }, 1500);
+  }, 15000);
 
   return (
     <section className={style.testimony}>

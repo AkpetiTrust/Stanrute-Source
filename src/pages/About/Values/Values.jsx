@@ -9,8 +9,7 @@ function Values() {
         It only gets <span className="text-secondary">better!</span>
       </h1>
       <p className={style.values_talk}>
-        This has been our anthem, while upholding our values we'll keep on
-        delivering high level of excellent to our community.
+        We are building what lasts. Our core values at Stanrute are:
       </p>
 
       <section className={`${style.inner} grid`}>
@@ -18,26 +17,21 @@ function Values() {
           <div className={style.dashes} aria-hidden></div>
           <h3 className={style.value_title}>Standard</h3>
           <p className={style.value_talk}>
-            At Stanrute, our services come to you on a gold platter. We offer
-            high quality expertise that is worth what you pay and more. Most of
-            our services cannot be found elsewhere.
+            Stanrute's services are rendered to you on a platter of gold.
           </p>
         </div>
         <div className={style.value}>
           <div className={style.dashes} aria-hidden></div>
           <h3 className={style.value_title}>Reliable</h3>
           <p className={style.value_talk}>
-            You can always count on us in terms of consistency. Well grounded in
-            the services we offer, you can depend on us to provide you with a
-            transparent mode of operation both now and in the long run.
+            Honesty is what drives Stanrute. We aim to be worthy of your trust.
           </p>
         </div>
         <div className={style.value}>
           <h3 className={style.value_title}>Trustworthy</h3>
           <p className={style.value_talk}>
-            Being trustworthy is to be full of integrity. This is what Stanrute
-            thrives on. We're honest and you can totally trust us to give out
-            value for your payment.
+            At Stanrute, our mode of operations is transparent giving you the
+            comfort you need.
           </p>
         </div>
         <figure className={style.ceo_container}>

@@ -38,9 +38,9 @@ function About() {
             </div>
             <p>
               Stanrute was founded in April 2021. Then, the company was known as
-              Flourish Exchange but after a thorough rebranding process, on
-              November 2021, STANRUTE was introduced. It is one of the
-              fast-growing crypto company in West Africa.
+              Flourish Exchange but after a thorough rebranding process,
+              STANRUTE was introduced on November, 2021. It is one of the
+              fastest-growing crypto companies in West Africa.
             </p>
           </div>
           <div>

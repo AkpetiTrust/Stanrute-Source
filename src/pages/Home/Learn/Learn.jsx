@@ -7,7 +7,7 @@ export default function Learn() {
       <h1>Learn With Stanrute</h1>
       <div className="center">
         <p>
-          Our Academy provide standard learning resources for people to learn
+          Our Academy provides standard learning resources for people to learn
           about the cryptocurrency and blockchain space.
         </p>
       </div>

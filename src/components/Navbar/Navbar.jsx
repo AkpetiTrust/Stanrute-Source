@@ -30,10 +30,10 @@ export default function Navbar({ children, textColor }) {
             <Link to="/about">About us</Link>
           </li>
           <li>
-            <Link to="/products">Products</Link>
+            <Link to="/blog">Blog</Link>
           </li>
           <li>
-            <Link to="/blog">Blog</Link>
+            <Link to="/academy">Academy</Link>
           </li>
           <li>
             <Link to="/careers">Careers</Link>

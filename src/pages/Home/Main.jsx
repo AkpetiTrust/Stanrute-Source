@@ -50,11 +50,11 @@ export default function Main() {
         </Service>
       </section>
       <ChooseUs />
-      <Features />
       <Learn />
       <Beta />
       <Groove />
       <Testimony />
+      <Features />
     </section>
   );
 }
