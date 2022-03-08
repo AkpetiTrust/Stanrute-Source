@@ -84,7 +84,7 @@
 
 @media screen and (max-width: 800px) {
   .blog :global(.nav) {
-    height: 90px;
+    height: 80px;
   }
   .blog .logo {
     left: -10px;

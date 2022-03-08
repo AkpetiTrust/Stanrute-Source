@@ -1,11 +1,21 @@
 .navbar {
-  position: absolute;
+  position: fixed;
+  z-index: 5;
   top: 0;
   left: 0;
   width: 100%;
   display: flex;
   justify-content: flex-end;
   padding: 30px 30px;
+  transition: all 0.4s, color 0s;
+
+  &.scrolled {
+    color: #000 !important;
+    img {
+      filter: invert(1);
+    }
+  }
+
   .toggle {
     display: none;
   }
@@ -59,6 +69,7 @@
 @media screen and(max-width:700px) {
   .navbar {
     justify-content: flex-start;
+    height: 90px;
     img {
       transition: 0.5s;
     }
@@ -74,7 +85,7 @@
       flex-direction: column;
       width: 20px;
       cursor: pointer;
-      transition: 0.5s;
+      transition: transform 0.5s, background-color 0.2s;
       color: inherit;
       &::before {
         content: "";
@@ -83,7 +94,7 @@
         display: inline-block;
         height: 3px;
         transform: rotate(0);
-        transition: 0.5s;
+        transition: transform 0.5s, background-color 0.2s;
       }
 
       span {
@@ -92,7 +103,7 @@
         display: inline-block;
         height: 3px;
         margin: 4px 0;
-        transition: 0.5s;
+        transition: transform 0.5s, background-color 0.2s;
       }
 
       &::after {
@@ -102,7 +113,7 @@
         display: inline-block;
         height: 3px;
         transform: rotate(0);
-        transition: 0.5s;
+        transition: transform 0.5s, background-color 0.2s;
       }
 
       &.active {

@@ -27,7 +27,7 @@ export default function Hero() {
 
   return (
     <section className="hero flex">
-      <Navbar textColor={"#fff"}>
+      <Navbar textColor={"#fff"} checkScroll={true}>
         <Link to="/" className="logo">
           <img src={Logo} alt="Logo" />
         </Link>
