@@ -1,6 +1,7 @@
 import { React, useState, useEffect } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import Logo from "./images/logo.png";
+import Stanrute from "./images/Stanrute.png";
 import { Link } from "react-router-dom";
 import useInterval from "./useInterval";
 
@@ -30,6 +31,9 @@ export default function Hero() {
       <Navbar textColor={"#fff"} checkScroll={true}>
         <Link to="/" className="logo">
           <img src={Logo} alt="Logo" />
+        </Link>
+        <Link to="/" className="logo-scrolled">
+          <img src={Stanrute} alt="Logo" />
         </Link>
       </Navbar>
       <section className="inner">

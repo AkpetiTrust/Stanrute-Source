@@ -15,13 +15,25 @@
   transition: all 0.4s, color 0s;
 }
 
-.navbar.scrolled {
-  color: #000 !important;
+.navbar :global(.logo-scrolled) {
+  display: none;
 }
 
-.navbar.scrolled img {
-  -webkit-filter: invert(1);
-          filter: invert(1);
+.navbar.scrolled :global(.logo) {
+  display: none;
+}
+
+.navbar.scrolled :global(.logo-scrolled) {
+  display: initial;
+  width: 200px;
+  position: absolute;
+  left: 40px;
+  top: 5px;
+  z-index: 3;
+}
+
+.navbar.scrolled :global(.logo-scrolled) img {
+  max-width: 100%;
 }
 
 .navbar .toggle {
@@ -43,11 +55,12 @@
   list-style: none;
   margin: 0;
   padding: 10px 40px;
+  color: inherit;
 }
 
 .navbar li a {
   text-decoration: none;
-  color: currentColor;
+  color: inherit;
   font-weight: 700;
   position: relative;
 }
@@ -87,6 +100,11 @@
   .navbar {
     padding-top: 15px;
   }
+  .navbar.scrolled :global(.logo-scrolled) {
+    left: -10px;
+    top: 0;
+    width: 170px;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -103,6 +121,10 @@
   .navbar.active img {
     -webkit-filter: invert(1);
             filter: invert(1);
+  }
+  .navbar.active.scrolled img {
+    -webkit-filter: unset;
+            filter: unset;
   }
   .navbar .toggle {
     position: absolute;
@@ -175,6 +197,9 @@
   .navbar .toggle.active span {
     opacity: 0;
   }
+  .navbar.scrolled .toggle {
+    color: #000 !important;
+  }
   .navbar ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -195,6 +220,9 @@
             justify-content: flex-start;
     -webkit-transform: translateY(-150%);
             transform: translateY(-150%);
+  }
+  .navbar ul a {
+    color: #000 !important;
   }
   .navbar.active ul {
     -webkit-transform: translateY(0);

@@ -50,21 +50,37 @@ export default function Navbar({ children, textColor, checkScroll }) {
         <span></span>
       </span>
       <nav className={active ? style.active : ""}>
-        <ul>
+        <ul style={{ color: scrolled ? "#000" : textColor }}>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/" style={{ color: scrolled ? "#000" : textColor }}>
+              Home
+            </Link>
           </li>
           <li>
-            <Link to="/about">About us</Link>
+            <Link to="/about" style={{ color: scrolled ? "#000" : textColor }}>
+              About us
+            </Link>
           </li>
           <li>
-            <Link to="/blog">Blog</Link>
+            <Link to="/blog" style={{ color: scrolled ? "#000" : textColor }}>
+              Blog
+            </Link>
           </li>
           <li>
-            <Link to="/academy">Academy</Link>
+            <Link
+              to="/academy"
+              style={{ color: scrolled ? "#000" : textColor }}
+            >
+              Academy
+            </Link>
           </li>
           <li>
-            <Link to="/careers">Careers</Link>
+            <Link
+              to="/careers"
+              style={{ color: scrolled ? "#000" : textColor }}
+            >
+              Careers
+            </Link>
           </li>
         </ul>
       </nav>
