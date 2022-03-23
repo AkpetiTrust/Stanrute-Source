@@ -12,9 +12,9 @@ export default function Career() {
     {
       title: "Engineering",
       openings: [
-        { title: "Engineering Manager", remote: true },
-        { title: "Senior Software Engineer", remote: true },
-        { title: "Senior Mobile Engineer", remote: true },
+        // { title: "Engineering Manager", remote: true },
+        // { title: "Senior Software Engineer", remote: true },
+        // { title: "Senior Mobile Engineer", remote: true },
       ],
     },
     { title: "Product", openings: [] },

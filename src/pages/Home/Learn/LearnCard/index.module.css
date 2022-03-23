@@ -19,6 +19,10 @@
   line-height: 1em;
 }
 
+.card p:first-child {
+  margin-bottom: 10px;
+}
+
 .card .status {
   position: absolute;
   top: 20px;

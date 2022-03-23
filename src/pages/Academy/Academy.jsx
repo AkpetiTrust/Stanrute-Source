@@ -32,7 +32,7 @@ export default function Academy() {
         <p className={style.subtitle}>
           We have free and paid resources that are curated by industry experts
         </p>
-        <div className={style.card_section}>
+        {/* <div className={style.card_section}>
           <div>
             <AcademyCard />
           </div>
@@ -42,7 +42,7 @@ export default function Academy() {
           <div>
             <AcademyCard />
           </div>
-        </div>
+        </div> */}
       </main>
       <Footer />
     </section>

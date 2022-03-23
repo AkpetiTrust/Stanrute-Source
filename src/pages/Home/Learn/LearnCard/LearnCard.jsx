@@ -14,7 +14,7 @@ export default function LearnCard({ text }) {
       </div>
       <div className={style.card_talk}>
         <p className="text-primary">{text}</p>
-        <img src={rating} alt="rating" />
+        {/* <img src={rating} alt="rating" /> */}
         <p className={style.label}>Highlights:</p>
         <div className={style.btn_group}>
           <button className={`btn ${style.btn_blue}`}>Concepts</button>

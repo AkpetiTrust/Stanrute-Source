@@ -10,6 +10,9 @@
 
   p {
     line-height: 1em;
+    &:first-child {
+      margin-bottom: 10px;
+    }
   }
 
   .status {
