@@ -161,6 +161,16 @@ $blue-color: #0067df;
     }
     .main {
       padding: 50px 40px;
+
+      .no_openings {
+        .img_container {
+          max-width: 100px;
+        }
+        p {
+          text-align: left;
+          font-size: 1.1em;
+        }
+      }
     }
   }
 }

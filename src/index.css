@@ -451,6 +451,9 @@ body {
     top: 0;
     width: 100px;
   }
+  .hero .btn {
+    padding: 8px 20px;
+  }
   .hero .inner {
     padding-left: 0;
     width: 100%;

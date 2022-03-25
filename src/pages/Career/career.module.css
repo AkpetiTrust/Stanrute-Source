@@ -163,5 +163,12 @@
   .career .main {
     padding: 50px 40px;
   }
+  .career .main .no_openings .img_container {
+    max-width: 100px;
+  }
+  .career .main .no_openings p {
+    text-align: left;
+    font-size: 1.1em;
+  }
 }
 /*# sourceMappingURL=career.module.css.map */
