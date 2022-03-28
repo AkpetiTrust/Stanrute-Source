@@ -9,6 +9,8 @@ import Career from "./pages/Career/Career";
 import About from "./pages/About/About";
 import Blog from "./pages/Blog/Blog";
 import ScrollToTop from "./ScrollToTop";
+import ComingSoon from "./pages/ComingSoon/ComingSoon";
+import useTimeLeft from "./pages/ComingSoon/hooks/useTimeLeft";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -16,8 +18,11 @@ AOS.init({
   once: true,
 });
 
-ReactDOM.render(
-  <React.StrictMode>
+function Render() {
+  const timeLeft = useTimeLeft();
+  return timeLeft > 0 ? (
+    <ComingSoon />
+  ) : (
     <Router>
       <ScrollToTop />
       <Routes>
@@ -28,6 +33,12 @@ ReactDOM.render(
         <Route path="/blog" exact element={<Blog />} />
       </Routes>
     </Router>
+  );
+}
+
+ReactDOM.render(
+  <React.StrictMode>
+    <Render />
   </React.StrictMode>,
   document.getElementById("root")
 );
