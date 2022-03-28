@@ -96,7 +96,10 @@ function ComingSoon() {
         </div>
       </section>
       <footer className="center">
-        <p>&copy; Stanrute Technologies 2022</p>
+        <p className="center">
+          {" "}
+          <span> &copy;</span> Stanrute Technologies 2022
+        </p>
       </footer>
     </section>
   );

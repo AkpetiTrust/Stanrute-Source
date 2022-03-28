@@ -1,0 +1,71 @@
+.article :global(.nav) {
+  background-color: #f8fffc;
+  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.article .logo {
+  width: 200px;
+  position: absolute;
+  left: 40px;
+  top: 5px;
+  z-index: 3;
+}
+
+.article .logo img {
+  max-width: 100%;
+  -webkit-filter: unset;
+          filter: unset;
+}
+
+.article main {
+  padding: 0 50px;
+  padding-top: 150px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.article main .title {
+  font-size: 2.4em;
+  margin-bottom: 40px;
+  line-height: 1.2;
+}
+
+.article main img {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.article main p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.article main a {
+  color: inherit;
+}
+
+@media screen and (max-width: 800px) {
+  .article :global(.nav) {
+    height: 80px;
+  }
+  .article .logo {
+    left: -10px;
+    top: 0;
+    width: 170px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .article main {
+    padding: 0 20px;
+    padding-top: 120px;
+  }
+  .article main .title {
+    font-size: 2em;
+  }
+  .article main p {
+    font-size: 1em;
+  }
+}
+/*# sourceMappingURL=index.module.css.map */

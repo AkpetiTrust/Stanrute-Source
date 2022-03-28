@@ -131,6 +131,12 @@
   font-weight: 800;
 }
 
+.container footer span {
+  font-size: 1.4em;
+  margin-right: 5px;
+  padding-top: 5px;
+}
+
 @media screen and (max-width: 760px) {
   .container .main {
     -ms-grid-columns: 1fr;

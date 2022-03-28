@@ -7,9 +7,15 @@ function useTimeLeft() {
     new Date(2022, 3, 1).getTime() - Date.now()
   );
 
+  let delay = 1000;
+
+  if (timeLeft > 0) {
+    delay = null;
+  }
+
   useInterval(() => {
     setTimeLeft(new Date(2022, 3, 1).getTime() - Date.now());
-  }, 1000);
+  }, delay);
 
   return timeLeft;
 }

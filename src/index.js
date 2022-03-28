@@ -10,6 +10,7 @@ import About from "./pages/About/About";
 import Blog from "./pages/Blog/Blog";
 import ScrollToTop from "./ScrollToTop";
 import ComingSoon from "./pages/ComingSoon/ComingSoon";
+import ArticlePage from "./pages/ArticlePage/ArticlePage";
 import useTimeLeft from "./pages/ComingSoon/hooks/useTimeLeft";
 
 import AOS from "aos";
@@ -20,7 +21,7 @@ AOS.init({
 
 function Render() {
   const timeLeft = useTimeLeft();
-  return timeLeft > 0 ? (
+  return timeLeft < 0 ? (
     <ComingSoon />
   ) : (
     <Router>
@@ -31,6 +32,7 @@ function Render() {
         <Route path="/careers" exact element={<Career />} />
         <Route path="/about" exact element={<About />} />
         <Route path="/blog" exact element={<Blog />} />
+        <Route path="/articlepage" exact element={<ArticlePage />} />
       </Routes>
     </Router>
   );

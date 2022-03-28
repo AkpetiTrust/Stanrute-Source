@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { React, useState, useEffect } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import style from "./blog.module.css";
@@ -9,82 +9,44 @@ import Article from "./Article/Article";
 import { Link } from "react-router-dom";
 
 function Blog() {
-  const [recents, setRecents] = useState([
-    {
-      title: "Top Assets for 2022 - with Good base technologies",
-      date: "22 February",
-      time: "3 Mins Read",
-      link: "#",
-      image: blog_cover,
-      subtitle: "",
-      index: 0,
-    },
-    {
-      title: "Top Assets for 2022 - with Good base technologies",
-      date: "22 February",
-      time: "3 Mins Read",
-      link: "#",
-      image: blog_cover,
-      subtitle: "",
-      index: 1,
-    },
-    {
-      title: "Top Assets for 2022 - with Good base technologies",
-      date: "22 February",
-      time: "3 Mins Read",
-      link: "#",
-      image: blog_cover,
-      subtitle: "",
-      index: 2,
-    },
-  ]);
-  const [popular_posts, setPopular_posts] = useState([
-    {
-      title: "Crypto Investments vs Traditional Investments ",
-      date: "22 February",
-      time: "3 Mins Read",
-      link: "#",
-      image: investment,
-      subtitle: "Which has proven to be more profitable?",
-      index: 0,
-    },
-    {
-      title: "Crypto Investments vs Traditional Investments ",
-      date: "22 February",
-      time: "3 Mins Read",
-      link: "#",
-      image: investment,
-      subtitle: "Which has proven to be more profitable?",
-      index: 1,
-    },
-    {
-      title: "Crypto Investments vs Traditional Investments ",
-      date: "22 February",
-      time: "3 Mins Read",
-      link: "#",
-      image: investment,
-      subtitle: "Which has proven to be more profitable?",
-      index: 2,
-    },
-    {
-      title: "Crypto Investments vs Traditional Investments ",
-      date: "22 February",
-      time: "3 Mins Read",
-      link: "#",
-      image: investment,
-      subtitle: "Which has proven to be more profitable?",
-      index: 3,
-    },
-    {
-      title: "Crypto Investments vs Traditional Investments ",
-      date: "22 February",
-      time: "3 Mins Read",
-      link: "#",
-      image: investment,
-      subtitle: "Which has proven to be more profitable?",
-      index: 4,
-    },
-  ]);
+  const [recents, setRecents] = useState([]);
+  const [popular_posts, setPopular_posts] = useState([]);
+
+  const feedUrl = "https://medium.com/feed/@stanrutelimited";
+  const options = {
+    method: "GET",
+  };
+
+  useEffect(() => {
+    fetch(`https://api.rss2json.com/v1/api.json?rss_url=${feedUrl}`, options)
+      .then((res) => res.json())
+      .then((result) => {
+        let items = [];
+        result.items.forEach((item) => {
+          const dateObject = new Date(item.pubDate);
+          let date = `${dateObject.getDate()} ${dateObject.toLocaleString(
+            "default",
+            { month: "long" }
+          )}`;
+
+          let minutes = Math.ceil(item.content.split(" ").length / 256);
+
+          items.push({
+            title: item.title,
+            date: date,
+            time: `${minutes} ${minutes !== 1 ? "Mins" : "Min"} Read`,
+            link: `/articlepage`,
+            image: item.thumbnail,
+            subtitle: "",
+            index: 0,
+            content: item.content,
+          });
+        });
+
+        setRecents(items);
+        setPopular_posts(items);
+      });
+  }, []);
 
   return (
     <section className={style.blog}>
@@ -114,6 +76,7 @@ function Blog() {
                 date={recent.date}
                 link={recent.link}
                 image={recent.image}
+                item={recent}
               />
             ))}
           </div>
@@ -130,6 +93,7 @@ function Blog() {
                 date={post.date}
                 link={post.link}
                 image={post.image}
+                item={post}
               />
             ))}
           </div>
