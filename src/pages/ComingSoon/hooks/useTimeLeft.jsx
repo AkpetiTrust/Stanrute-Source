@@ -9,7 +9,7 @@ function useTimeLeft() {
 
   let delay = 1000;
 
-  if (timeLeft > 0) {
+  if (timeLeft < 0) {
     delay = null;
   }
 

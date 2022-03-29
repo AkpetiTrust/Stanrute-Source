@@ -14,7 +14,7 @@ export default function AcademyCard() {
       </div>
       <div className={style.card_talk}>
         <p className="text-primary">Learn the basics of Cryptocurrency</p>
-        <img src={rating} alt="rating" />
+        {/* <img src={rating} alt="rating" /> */}
         <p className={style.label}>Highlights:</p>
         <div className={style.btn_group}>
           <button className={`btn ${style.btn_blue}`}>Concepts</button>

@@ -21,7 +21,7 @@ AOS.init({
 
 function Render() {
   const timeLeft = useTimeLeft();
-  return timeLeft < 0 ? (
+  return timeLeft > 0 ? (
     <ComingSoon />
   ) : (
     <Router>

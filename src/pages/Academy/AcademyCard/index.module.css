@@ -43,6 +43,8 @@
   font-weight: 600;
   font-size: 1.3em;
   color: #00422e;
+  line-height: 1em;
+  margin-bottom: 10px;
 }
 
 .card .card_talk img {

@@ -1,5 +1,6 @@
 import style from "./index.module.css";
 import LearnCard from "./LearnCard/LearnCard";
+import { Link } from "react-router-dom";
 
 export default function Learn() {
   return (
@@ -15,9 +16,9 @@ export default function Learn() {
         <LearnCard text={"Learn the basics of cryptocurrency"} />
         <LearnCard text={"How to Create an NFT"} />
       </div>
-      <a href="https://wa.me/2348088261852" className={style.link}>
+      <Link to="academy" className={style.link}>
         Join now
-      </a>
+      </Link>
     </section>
   );
 }
