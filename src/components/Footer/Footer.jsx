@@ -19,7 +19,9 @@ export default function Footer() {
           <p className={style.column_heading}>Company</p>
           <Link to="/careers">Career</Link>
           <Link to="/academy">Academy</Link>
-          <a href="https://wa.me/2348088261852">Contact us</a>
+          <a href="https://wa.me/2348088261852?text=Hi%20Stanrute%21%20I%20want%20to%20_">
+            Contact us
+          </a>
         </div>
         <div className={style.col_2}>
           <p className={style.column_heading}>Legal</p>
@@ -28,7 +30,7 @@ export default function Footer() {
         </div>
         <div className={style.col_3}>
           <div className={style.social_icons}>
-            <a href="https://wa.me/2348088261852">
+            <a href="https://wa.me/2348088261852?text=Hi%20Stanrute%21%20I%20want%20to%20_">
               <img src={whatsapp} alt="whatsapp" />
             </a>
             <a href="https://www.instagram.com/mystanrute_/">

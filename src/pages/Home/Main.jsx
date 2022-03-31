@@ -27,7 +27,10 @@ export default function Main() {
               (Non-Fungible Tokens), e-currencies (cryptocurrencies). Trade at
               good rates.
             </p>
-            <a href="https://wa.me/2348088261852" className="btn btn-secondary">
+            <a
+              href="https://wa.me/2348088261852?text=Hi%20Stanrute%21%20I%20want%20to%20_"
+              className="btn btn-secondary"
+            >
               Trade with us
             </a>
           </section>
@@ -43,7 +46,10 @@ export default function Main() {
               We buy various types of gift cards from over 15 countries.
               Experience convenience and security while trading your cards.
             </p>
-            <a href="https://wa.me/2348088261852" className="btn btn-primary">
+            <a
+              href="https://wa.me/2348088261852?text=Hi%20Stanrute%21%20I%20want%20to%20_"
+              className="btn btn-primary"
+            >
               Start Trading
             </a>
           </section>

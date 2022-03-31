@@ -43,7 +43,10 @@ export default function Hero() {
         <p>
           {text} <span className="type" aria-hidden="true"></span>
         </p>
-        <a href="https://wa.me/2348088261852" className="btn">
+        <a
+          href="https://wa.me/2348088261852?text=Hi%20Stanrute%21%20I%20want%20to%20_"
+          className="btn"
+        >
           Trade with us
         </a>
       </section>

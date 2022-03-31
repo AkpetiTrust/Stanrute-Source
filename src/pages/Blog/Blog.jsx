@@ -70,7 +70,7 @@ function Blog() {
             {recents.map((recent) => (
               <Article
                 title={recent.title}
-                key={recent.index}
+                key={recent.title}
                 subtitle={recent.subtitle}
                 time={recent.time}
                 date={recent.date}
@@ -87,7 +87,7 @@ function Blog() {
             {popular_posts.map((post) => (
               <Article
                 title={post.title}
-                key={post.index}
+                key={post.title}
                 subtitle={post.subtitle}
                 time={post.time}
                 date={post.date}
