@@ -5,7 +5,7 @@ import rating from "./Rating.svg";
 
 export default function AcademyCard() {
   return (
-    <div className={style.card}>
+    <a href="https://academy.stanrute.com" className={style.card}>
       <button className={`btn ${style.status}`} disabled>
         Upcoming Class
       </button>
@@ -13,7 +13,7 @@ export default function AcademyCard() {
         <img src={image} alt="Stanrute Academy" />
       </div>
       <div className={style.card_talk}>
-        <p className="text-primary">Learn the basics of Cryptocurrency</p>
+        <p className="text-primary">Introducing Stanrute Academy</p>
         {/* <img src={rating} alt="rating" /> */}
         <p className={style.label}>Highlights:</p>
         <div className={style.btn_group}>
@@ -22,6 +22,6 @@ export default function AcademyCard() {
           <button className={`btn ${style.btn_green}`}>Trade</button>
         </div>
       </div>
-    </div>
+    </a>
   );
 }

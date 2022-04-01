@@ -13,8 +13,7 @@ export default function Learn() {
         </p>
       </div>
       <div className={style.cards}>
-        <LearnCard text={"Learn the basics of cryptocurrency"} />
-        <LearnCard text={"How to Create an NFT"} />
+        <LearnCard text={"Introducing Stanrute Academy"} />
       </div>
       <Link to="academy" className={style.link}>
         Join now

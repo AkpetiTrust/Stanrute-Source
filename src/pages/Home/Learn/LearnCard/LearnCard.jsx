@@ -5,7 +5,12 @@ import rating from "./Rating.svg";
 
 export default function LearnCard({ text }) {
   return (
-    <div className={style.card} data-aos="flip-right" data-aos-duration="1000">
+    <a
+      href="https://academy.stanrute.com"
+      className={style.card}
+      data-aos="flip-right"
+      data-aos-duration="1000"
+    >
       <button className={`btn ${style.status}`} disabled>
         Upcoming Class
       </button>
@@ -22,6 +27,6 @@ export default function LearnCard({ text }) {
           <button className={`btn ${style.btn_green}`}>Trade</button>
         </div>
       </div>
-    </div>
+    </a>
   );
 }
