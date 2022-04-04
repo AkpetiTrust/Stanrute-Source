@@ -6,9 +6,9 @@ import rating from "./Rating.svg";
 export default function AcademyCard() {
   return (
     <a href="https://academy.stanrute.com" className={style.card}>
-      <button className={`btn ${style.status}`} disabled>
+      {/* <button className={`btn ${style.status}`} disabled>
         Upcoming Class
-      </button>
+      </button> */}
       <div className={style.card_image_container}>
         <img src={image} alt="Stanrute Academy" />
       </div>

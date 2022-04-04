@@ -11,9 +11,9 @@ export default function LearnCard({ text }) {
       data-aos="flip-right"
       data-aos-duration="1000"
     >
-      <button className={`btn ${style.status}`} disabled>
+      {/* <button className={`btn ${style.status}`} disabled>
         Upcoming Class
-      </button>
+      </button> */}
       <div className={style.card_image_container}>
         <img src={image} alt="Stanrute Academy" />
       </div>
