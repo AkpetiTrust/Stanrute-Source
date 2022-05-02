@@ -7,6 +7,7 @@ import blog_cover from "./blog_cover.png";
 import investment from "./investment.png";
 import Article from "./Article/Article";
 import { Link } from "react-router-dom";
+import Loading from "../../components/Loading/Loading";
 
 function Blog() {
   const [recents, setRecents] = useState([]);
@@ -101,7 +102,8 @@ function Blog() {
                 image={recent.image}
                 item={recent}
               />
-            ))}
+            ))}{" "}
+            {!recents.length && <Loading />}
           </div>
         </section>
         <section className={style.popular}>
@@ -118,7 +120,8 @@ function Blog() {
                 image={post.image}
                 item={post}
               />
-            ))}
+            ))}{" "}
+            {!popular_posts.length && <Loading />}
           </div>
         </section>
       </main>
